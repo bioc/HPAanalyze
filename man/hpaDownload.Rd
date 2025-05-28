@@ -8,66 +8,21 @@ hpaDownload(downloadList = "histology", version = "latest")
 }
 \arguments{
 \item{downloadList}{A vector or string indicate which datasets to download.
-  Possible value:
+  Common values:
   \itemize{
-    \item \code{'Normal tissue'}
-    \item \code{'Pathology'}
-    \item \code{'Subcellular location'}
-    \item \code{'RNA consensus tissue'}
-    \item \code{'RNA HPA tissue'}
-    \item \code{'RNA GTEx tissue'}
-    \item \code{'RNA FANTOM tissue'}
-    \item \code{'RNA single cell type'}
-    \item \code{'RNA single cell type tissue cluster'}
-    \item \code{'RNA GTEx brain region'}
-    \item \code{'RNA FANTOM brain region'}
-    \item \code{'RNA pig brain region'}
-    \item \code{'RNA pig brain subregion sample'}
-    \item \code{'RNA mouse brain region'}
-    \item \code{'RNA mouse brain subregion sample'}
-    \item \code{'RNA Allen mouse brain region'}
-    \item \code{'RNA HPA immune cell'}
-    \item \code{'RNA HPA immune cell sample'}
-    \item \code{'RNA Monaco immune cell'}
-    \item \code{'RNA Schmiedel immune cell'}
-    \item \code{'RNA HPA blood cell'} (version 21.1)
-    \item \code{'RNA HPA blood cell sample'} (version 21.1)
-    \item \code{'RNA Monaco blood cell'} (version 21.1)
-    \item \code{'RNA Schmiedel blood cell'} (version 21.1)
-    \item \code{'RNA HPA cell line cancer'}
-    \item \code{'RNA HPA cell line'}
-    \item \code{'RNA TCGA cancer sample'}
-    \item \code{'RNA transcript tissue'}
-    \item \code{'RNA transcript GTEx retina'}
-    \item \code{'RNA transcript immune cells'}
-    \item \code{'RNA transcript cell line'} (version 21.1)
-    \item \code{'RNA transcript pig brain'}
-    \item \code{'RNA transcript mouse brain'}
+    \item \code{'normal_tissue'}
+    \item \code{'pathology'}
+    \item \code{'subcellular_location'}
     }
+  For the full list of possible values for a specific version, set
+  downloadList as NULL: \code{hpaDownload(downloadList = NULL, version =
+  <version>)}
 
   You can also use the following shortcuts:
   \itemize{
-    \item \code{'all'}: download everything
-    \item \code{'histology'}: same as \code{c('Normal tissue', 'Pathology',
-    'Subcellular location')}
-    \item \code{'rna tissue'}: same as \code{c('RNA consensus tissue', 'RNA
-    HPA tissue', 'RNA GTEx tissue', 'RNA FANTOM tissue')}
-    \item \code{'rna cell type'}: same as \code{c('RNA single cell
-    type', 'RNA single cell type tissue cluster')}
-    \item \code{'rna brain region'}: same as \code{c('RNA GTEx brain region',
-    'RNA FANTOM brain region', 'RNA pig brain region', 'RNA pig brain
-    subregion sample', 'RNA mouse brain region', 'RNA mouse brain subregion
-    sample', 'RNA Allen mouse brain region')}
-    \item \code{'rna immune cell'}: same as \code{c('RNA HPA immune
-    cell', 'RNA HPA immune cell sample', 'RNA Monaco immune cell', 'RNA
-    Schmiedel immune cell')}
-    \item \code{'rna blood cell'}: same as \code{c('RNA HPA blood
-    cell', 'RNA HPA blood cell sample', 'RNA Monaco blood cell', 'RNA
-    Schmiedel blood cell')}
-    \item \code{'isoform'}: same as \code{c('RNA transcript tissue', 'RNA 
-    transcript GTEx retina', 'RNA transcript immune cells', 'RNA
-    transcript cell line', 'RNA transcript pig brain', 'RNA transcript mouse
-    brain')}
+    \item \code{'all'}: download everything (not recommended!!!)
+    \item \code{'histology'}: same as \code{c('normal_tissue', 'pathology',
+    'subcellular_location')}
   }
   See \url{https://www.proteinatlas.org/about/download} for more information.}
 
